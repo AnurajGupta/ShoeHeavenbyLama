@@ -1,0 +1,284 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo img{
+    height: 50px;
+    margin: 0px;
+    filter: invert(100%);
+    margin-bottom: 4px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+.searchHere{
+    border: none;
+    background-color: transparent;
+}
+
+.searchHere::placeholder{
+    color: lightgrey;
+}
+
+.limitedOffer{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+
+.navBottom{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    cursor: pointer;
+    margin-right: 70px;
+    color: lightgray;
+}
+
+.slider{
+    background-image: url('https://img.freepik.com/free-photo/black-chalkboard-background_53876-110809.jpg?w=2000&t=st=1682178935~exp=1682179535~hmac=a5d3c937cc62fcbab41aeb389bbe3453912b20e102523759caf70e72be8b3e79');
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+    overflow: hidden;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderBG{
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.sliderTitle{
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+}
+
+.sliderImage{
+    z-index: 1 ;
+}
+
+.sliderPrice{
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid grey;    
+}
+
+.buyNow {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 1;
+    border: 1px solid grey;
+    cursor: pointer;
+    background-color: black;
+}
+
+.buyNow:hover {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 1;
+    border: 1px solid grey;
+    cursor: pointer;
+    background-color: white ;
+}
+
+.sliderItem:nth-child(1) .sliderBG{
+    background-color:#369e62;
+}
+
+.sliderItem:nth-child(2) .sliderBG{
+    background-color:rebeccapurple;
+}
+
+.sliderItem:nth-child(3) .sliderBG{
+    background-color:teal;
+}
+
+.sliderItem:nth-child(4) .sliderBG{
+    background-color:cornflowerblue;
+}
+
+.sliderItem:nth-child(5) .sliderBG{
+    background-color:rgb(124, 115, 80);;
+}
+
+.sliderItem:nth-child(1) .sliderPrice{
+    color:#369e62;
+}
+
+.sliderItem:nth-child(2) .sliderPrice{
+    color:rebeccapurple;
+}
+
+.sliderItem:nth-child(3) .sliderPrice{
+    color:teal;
+}
+
+.sliderItem:nth-child(4) .sliderPrice{
+    color:cornflowerblue;
+}
+
+.sliderItem:nth-child(5) .sliderPrice{
+    color:rgb(124, 115, 80);;
+}
+
+
+/* ~~~~~~~~~features~~~~~~~~~ */
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featureIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+}
+
+.featureDesc{
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+/* ~~~~~~~~~design~~~~~~~~~ */
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%);
+}
+
+.productImage{
+    width: 50%;
+}
+
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+.productTitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.productDesc{
+    font-size: 24px;
+    color: gray;
+}
+
+.colors , .sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.color{
+    width: 50px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: black;
+    margin-right: 10px;
+    color: lightgrey;
+    margin-bottom: 20px;
+}
+
+.color:last-child{
+    background-color: darkblue;
+}
+
+.size{
+    margin-right: 10px ;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.productButton{
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.productButton:hover{
+    background-color: white;
+    color: black;
+}
